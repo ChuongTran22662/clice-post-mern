@@ -22,5 +22,11 @@ export const updatePost = createActions({
     updatePostFailure: err => err
 })
 
+export const deletePost = createActions({
+    deletePostRequest: payload => payload,
+    deletePostSuccess: payload => payload,
+    deletePostFailure: err => err
+})
+
 export const showModal = createAction('SHOW_MODAL_ACTION');
 export const hideModal = createAction('HIDE_MODAL_ACTION');

@@ -28,7 +28,6 @@ export const CreatePostModal = () => {
     }, [dispatch])
 
     const onSubmit = React.useCallback(() => {
-        console.log(data);
         dispatch(createPost.createPostRequest(data));
         onClose();
     }, [data, dispatch, onClose])
